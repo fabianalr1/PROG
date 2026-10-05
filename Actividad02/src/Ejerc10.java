@@ -9,6 +9,14 @@ public class Ejerc10 {
         Scanner teclado = new Scanner(System.in);
         int contador;
         boolean hayNegativos = false;
-        
+        while(contador <= 10)
+            IO.println("Introduce un número no nulo");
+        int numero = teclado.nextInt();
+        if(numero !=0){
+            contador++;
+            if(numero <0){
+                hayNegativos = true;
+            }
+        }
     }
 }
