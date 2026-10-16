@@ -8,10 +8,13 @@ public class Ejerc7 {
         int P= teclado.nextInt();
         IO.println("Introduce Q ");
         int Q= teclado.nextInt();
-        int valor = (Q - P);
-        int[] variable = new int[valor];
-        for (int i = 0 ; i <= variable.length; i++){
-            IO.println(i + valor);
-        }
+        int valor = Math.abs (P- Q) + 1;
+        int[] variable = new int[valor];}
+        for (int i = 0 ; i < variable.length; i++){
+
     }
+        IO.println(i + valor);
+
+}
+
 }

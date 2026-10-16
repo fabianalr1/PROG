@@ -4,7 +4,20 @@ public class Ejerc9 {
         //Crea un programa que cree un array de enteros de tamaño 100 y lo rellene con valores
         //enteros aleatorios entre 1 y 10 (utiliza 1 + Math.random()*10). Luego pedirá un valor N
         //y mostrará en qué posiciones del array aparece N
+        int[] numeros = new int[100];
+
+        for (int i = 0; i < numeros.length; i++){
+            numeros[i] = (int) (1+ Math.random() * 10);
+        }
         Scanner teclado = new Scanner(System.in);
-        
+        IO.println("Introduce un número entre 1 y 10: ");
+        int N = teclado.nextInt();
+
+        for (int i = 0; i <numeros.length; i++){
+            if (numeros[i] == N){
+                IO.println("Aparece en la posicion: " + i);
+            }
+        }
+        teclado.close();
     }
 }

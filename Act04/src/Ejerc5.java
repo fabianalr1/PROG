@@ -8,7 +8,7 @@ public class Ejerc5 {
         int suma= 0;
         for (int i = 0; i < numeros.length; i++) {
             Scanner teclado = new Scanner(System.in);
-            IO.println("Introduce los 20 numeros: ");
+            IO.println("Introduce el numero" + (i+1) + ": ");
             int ni = teclado.nextByte();
             numeros[i] = ni;
             suma = suma + numeros[i];

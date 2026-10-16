@@ -6,9 +6,11 @@ public class Ejerc8 {
         //cuántos valores del array son igual o superiores a R
         Scanner teclado = new Scanner(System.in);
         double[] num = new double[100];
+
         for (int i = 0; i < num.length; i++) {
             double numero = Math.random();
         }
+
         int igual = 0;
         IO.println("Introduzca R: ");
         double R = teclado.nextDouble();

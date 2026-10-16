@@ -6,7 +6,7 @@ public class Main {
             int [] numeros = new int[10];
             for ( int i=0;  i<numeros.length; i++) {
             Scanner teclado = new Scanner(System.in);
-            IO.println("Introduce los 10 numeros" );
+            IO.println("Introduce el numero"+(i+1) + ": " );
              int ni = teclado.nextInt();
              numeros[i]=ni;
         }
