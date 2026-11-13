@@ -13,7 +13,7 @@ public class Libro {
     private int nPaginas;
     private String editorial;
     private String genero;
-    private String fechaPublicacion;
+    private String fechaPublicación;
 
     //constructores
 
@@ -24,7 +24,7 @@ public class Libro {
         this.nPaginas = 0;
         this.editorial = "";
         this.genero = "";
-        this.fechaPublicacion = "";
+        this.fechaPublicación = "";
         this.contador = contadorTotal;
         contadorTotal++;
     }
@@ -37,7 +37,7 @@ public class Libro {
         this.nPaginas = nPaginas;
         this.editorial = editorial;
         this.genero = genero;
-        this.fechaPublicacion = fechaPublicacion;
+        this.fechaPublicación = fechaPublicacion;
 
         this.contador = contadorTotal;
         contadorTotal++;
@@ -75,7 +75,7 @@ public class Libro {
     }
 
     public String getFechaPublicacion(){
-        return this.fechaPublicacion;
+        return this.fechaPublicación;
     }
 
     public String getGenero(){
@@ -94,7 +94,7 @@ public class Libro {
         this.nPaginas = nPaginas;
     }
 
-    //metodo para obtener toda la informacion de un libro
+    //metodo para obtener toda la información de un libro
     public String infoLibro(){
         String infoLibro = "";
 
@@ -103,7 +103,7 @@ public class Libro {
         infoLibro += "Autor: " + this.autor + "\n";
         infoLibro += "ISBN: " + this.isbn + "\n";
         infoLibro += "Genero: " + this.genero + "\n";
-        infoLibro += "Fecha de Publicacion: " + this.fechaPublicacion + "\n";
+        infoLibro += "Fecha de Publicacion: " + this.fechaPublicación + "\n";
         infoLibro += "Editorial: " + this.editorial + "\n";
         infoLibro += "NPaginas: " + this.nPaginas + "\n";
 
