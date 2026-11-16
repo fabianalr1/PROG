@@ -3,26 +3,37 @@ import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 
 public class Movimiento {
-    private static int contadorMovimientos = 0;
 
-    private final DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd-MM-yyyy");
+    // Contador para generar los ID de los movimientos
+    private static int contadorMovimientos = 1;
 
-    //atributos de la clase
-    private final String id;
+    // Formato de la fecha
+    private final DateTimeFormatter formatter =
+            DateTimeFormatter.ofPattern("dd/MM/yyyy");
+
+    // Atributos de la clase
+    private final int id;
     private LocalDateTime fecha;
     private Tipo tipo;
     private double cantidad;
 
-    //constructores
-    public Movimiento (String id, LocalDateTime fecha,  Tipo tipo, double cantidad) {
-        this.id = id;
-        this.fecha = fecha;
-        this.tipo = tipo;
-        this.cantidad = contadorMovimientos;
+    // Constructor
+    public Movimiento(Tipo tipo, double cantidad) {
+
+        // Asigna un ID diferente a cada movimiento
+        this.id = contadorMovimientos;
         contadorMovimientos++;
+
+        // Guarda la fecha actual
+        this.fecha = LocalDateTime.now();
+
+        // Guarda el tipo y la cantidad
+        this.tipo = tipo;
+        this.cantidad = cantidad;
     }
 
-    public String getId() {
+    // Getters
+    public int getId() {
         return this.id;
     }
 
@@ -38,24 +49,15 @@ public class Movimiento {
         return this.cantidad;
     }
 
-    public void setFecha(LocalDateTime fecha) {
-        this.fecha = fecha;
-    }
+    // Muestra toda la información del movimiento
+    public String mostrarInfoMovimiento() {
 
-    public void setTipo(Tipo tipo) {
-        this.tipo = tipo;
-    }
-
-    public void setCantidad(double  cantidad) {
-        this.cantidad = cantidad;
-    }
-
-    public String infoMovimiento(){
         String mostrarInfoMovimiento = "";
+
         mostrarInfoMovimiento += "ID: " + this.id + "\n";
         mostrarInfoMovimiento += "Fecha: " + this.fecha.format(formatter) + "\n";
         mostrarInfoMovimiento += "Tipo: " + this.tipo.name() + "\n";
-        mostrarInfoMovimiento += "Cantidad: " + this.cantidad + "\n";
+        mostrarInfoMovimiento += "Cantidad: " + this.cantidad + " euros\n";
 
         return mostrarInfoMovimiento;
     }
