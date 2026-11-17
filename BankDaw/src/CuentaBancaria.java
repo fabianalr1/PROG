@@ -77,9 +77,7 @@ public class CuentaBancaria {
         if (euroIngresado > 0 && contadorMovimientos < 100) {
 
             this.saldo += euroIngresado;
-
             Movimiento ingreso = new Movimiento(Tipo.INGRESO, euroIngresado);
-
             this.movimientos1[this.contadorMovimientos] = ingreso;
             this.contadorMovimientos++;
 
@@ -89,7 +87,6 @@ public class CuentaBancaria {
                 IO.println("AVISO: Notificar a hacienda");
             }
         }
-
         return resultado;
     }
 
@@ -102,9 +99,7 @@ public class CuentaBancaria {
                 && this.saldo - euroRetiro >= -50) {
 
             this.saldo -= euroRetiro;
-
             Movimiento retiro = new Movimiento(Tipo.RETIRADA, euroRetiro);
-
             this.movimientos1[this.contadorMovimientos] = retiro;
             this.contadorMovimientos++;
 
@@ -118,7 +113,6 @@ public class CuentaBancaria {
                 IO.println("AVISO: Notificar a hacienda");
             }
         }
-
         return resultado;
     }
 
@@ -137,7 +131,6 @@ public class CuentaBancaria {
                 mostrar += "--------------------\n";
             }
         }
-
         return mostrar;
     }
 }

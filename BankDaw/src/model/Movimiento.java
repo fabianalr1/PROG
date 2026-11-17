@@ -9,7 +9,7 @@ public class Movimiento {
 
     // Formato de la fecha
     private final DateTimeFormatter formatter =
-            DateTimeFormatter.ofPattern("dd/MM/yyyy");
+            DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm:ss");
 
     // Atributos de la clase
     private final int id;
