@@ -101,7 +101,7 @@ public class Main {
                     break;
 
                 default:
-                    IO.println("Opcion no valida");
+                    IO.println("Opción no valida");
             }
         }
 
