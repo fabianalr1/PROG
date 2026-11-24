@@ -42,16 +42,14 @@ public class Persona {
     @Override
     public String toString(){
         StringBuilder sb = new StringBuilder();
-<<<<<<< HEAD
-        sb.append("Nombre: ").append(this.Nombre).append("\n");
 
-=======
+        sb.append("Nombre: ").append(this.nombre).append("\n");
         sb.append("Nombre: ").append(this.nombre).append("\n");
         sb.append("Apellidos: ").append(this.apellidos).append("\n");
         sb.append("Fecha nacimiento: ").append(this.fechaNacimiento).append("\n");
         sb.append("Dni: ").append(this.dni).append("\n");
         return sb.toString();
->>>>>>> b1cb602a630aa035e5974ccd4467bae6f02eb02f
+
     }
 
 

@@ -25,6 +25,8 @@ void main() {
             if(decrolyComunidad[i] instanceof Persona){
                 IO.println(decrolyComunidad[i]);
             }
+
+            //decrolyComunidad[i].getClass().getName().equals("Alumno");
         }
     }
 }
