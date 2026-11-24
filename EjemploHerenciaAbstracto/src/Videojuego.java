@@ -39,8 +39,8 @@ public class Videojuego extends Producto {
         final StringBuilder sb = new StringBuilder();
         sb.append(super.toString()).append("\n");
         sb.append("PEG: ").append(PEG).append("\n");
-        sb.append("Plataforma:").append(plataforma).append("\n");
-        sb.append("Desarrolladora:").append(desarrolladora).append("\n");
+        sb.append("Plataforma: ").append(plataforma).append("\n");
+        sb.append("Desarrolladora: ").append(desarrolladora).append("\n");
         return sb.toString();
     }
 }

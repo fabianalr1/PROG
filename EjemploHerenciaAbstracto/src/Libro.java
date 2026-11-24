@@ -56,8 +56,8 @@ public class Libro extends Producto{
         sb.append("ISBN: ").append(ISBN).append("\n");
         sb.append("Autor: ").append(autor).append("\n");
         sb.append("Editorial: ").append(editorial).append("\n");
-        sb.append("FechaPublicación:").append(fechaPublicacion).append("\n");
-        sb.append("nPaginas:").append(nPaginas);
+        sb.append("FechaPublicación: ").append(fechaPublicacion).append("\n");
+        sb.append("nPaginas: ").append(nPaginas);
         return sb.toString();
     }
 }

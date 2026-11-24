@@ -62,12 +62,12 @@ public class Pelicula extends Producto{
     @Override
     public String toString() {
         final StringBuilder sb = new StringBuilder();
-        sb.append("genero='").append(genero).append("\n");
-        sb.append(", duracion=").append(duracion).append("\n");
-        sb.append(", ISAN='").append(ISAN).append("\n");
-        sb.append(", director='").append(director).append("\n");
-        sb.append(", calificacionEdad='").append(calificacionEdad).append("\n");
-        sb.append(", formato='").append(formato).append("\n");
+        sb.append("Genero: ").append(genero).append("\n");
+        sb.append("Duración: ").append(duracion).append("\n");
+        sb.append("ISAN: ").append(ISAN).append("\n");
+        sb.append("Director: ").append(director).append("\n");
+        sb.append("Calificación Edad").append(calificacionEdad).append("\n");
+        sb.append("Formato: ").append(formato).append("\n");
         return sb.toString();
     }
 

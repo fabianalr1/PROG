@@ -39,14 +39,14 @@ public abstract class  Producto {
     public abstract double obtenerDescuento();
 
     public abstract String obtenerCalificacion();
-    
+
     //Sobre escritura del toString
     @Override
     public String toString(){
         StringBuilder sb = new StringBuilder();
         sb.append("Codigo: ").append(this.codigo).append("\n");
         sb.append("Nombre: ").append(this.nombre).append("\n");
-        sb.append("Descripcion: ").append(this.descripcion).append("\n");
+        sb.append("Descripción: ").append(this.descripcion).append("\n");
         sb.append("Precio: ").append(this.precio).append("\n");
 
         return sb.toString();
