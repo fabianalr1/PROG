@@ -70,5 +70,4 @@ public class Pelicula extends Producto{
         sb.append("Formato: ").append(formato).append("\n");
         return sb.toString();
     }
-
 }
