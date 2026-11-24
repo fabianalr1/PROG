@@ -36,6 +36,6 @@ public class Persona {
 
         StringBuilder sb = new StringBuilder();
         sb.append("Nombre: ").append(this.Nombre).append("\n");
-        
+
     }
 }
