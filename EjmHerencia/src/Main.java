@@ -1,13 +1,30 @@
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 void main() {
-    //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-    // to see how IntelliJ IDEA suggests fixing it.
-    IO.println(String.format("Hello and welcome!"));
+    String [] modulos = {"Frenada", "Paso por curva", "Adelantamiento","El ultimo pie"};
 
-    for (int i = 1; i <= 5; i++) {
-        //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-        // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-        IO.println("i = " + i);
+    Persona pp = new Persona("Pepe", "garcia", LocalDate.now(), "12345678P");
+
+    Alumno a1 = new Alumno("Marc", "Marquez",LocalDate.now(), "10101010M",
+            "MOTOGP",2026, modulos);
+
+    AntiguosAlumnos a2 = new AntiguosAlumnos("Valentino", "Rossi",LocalDate.now(), "99999999M",
+            "MOTOGP",2022, modulos, LocalDate.now(), false);
+
+//    IO.println(pp);
+//    IO.println(a1);
+
+    Persona[] decrolyComunidad = new Persona[5];
+
+    decrolyComunidad[0] = pp;
+    decrolyComunidad [1] = a1;
+    decrolyComunidad[2] = a2;
+
+    for(int i=0; i < decrolyComunidad.length; i++){
+        if(decrolyComunidad[i] != null){
+            if(decrolyComunidad[i] instanceof Persona){
+                IO.println(decrolyComunidad[i]);
+            }
+        }
     }
 }
