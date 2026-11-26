@@ -1,8 +1,6 @@
-import model.Cliente;
-import model.Pelicula;
+package model;
 
 import java.time.LocalDate;
-import java.util.Arrays;
 
 public class VideoDaw {
 

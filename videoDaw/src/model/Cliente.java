@@ -21,6 +21,7 @@ public class Cliente {
         this.codSocio = codSocio;
         this.direccion = direccion;
         this.fechaNacimiento = fechaNacimiento;
+        this.peliculasAlquiladas = new Pelicula[0];
     }
 
     public String getDNI() {
@@ -43,7 +44,7 @@ public class Cliente {
         return this.fechaNacimiento;
     }
 
-    public String mostarInfoCliente(){
+    public String mostrarInfoCliente(){
         StringBuilder sb = new StringBuilder();
         sb.append("DNI: ").append(this.DNI).append("\n");
         sb.append("Nombre: ").append(this.nombre).append("\n");

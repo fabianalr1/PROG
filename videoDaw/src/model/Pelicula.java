@@ -57,6 +57,11 @@ public class Pelicula {
         return this.isAlquilada;
     }
 
+    public void alquilar(){
+        this.isAlquilada = true;
+        this.fechaAlquiler = LocalDateTime.now();
+    }
+
     public String mostrarInfoPelicula(){
         StringBuilder sb = new StringBuilder();
         sb.append("Código: ").append(this.cod).append("\n");

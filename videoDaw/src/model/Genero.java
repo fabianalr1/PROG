@@ -1,5 +1,4 @@
 package model;
-
 public enum Genero {
-    ACCION,TERROR,COMEDIA
+    ACCION,TERROR,COMEDIA,DRAMA,ANIMADA
 }
