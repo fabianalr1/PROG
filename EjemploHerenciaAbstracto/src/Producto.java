@@ -35,6 +35,7 @@ public abstract class  Producto {
     public void setPrecio(double precio) {
         this.precio = precio;
     }
+
     //Metodos abstractos que voy a obligar a implementar a hija
     public abstract double obtenerDescuento();
 
