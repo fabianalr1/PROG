@@ -17,6 +17,7 @@ public class Pelicula {
     private final DateTimeFormatter dtf =
             DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm:ss");
 
+    //Constructor
     public Pelicula (String cod, String titulo, Genero genero, LocalDate fechaRegistro,
                      LocalDate fechaBaja, LocalDateTime fechaAlquiler, boolean isAlquilada){
 
@@ -57,20 +58,6 @@ public class Pelicula {
 
     public boolean isAlquilada() {
         return this.isAlquilada;
-    }
-
-    //Mostrar información
-    public String mostrarInfoPelicula(){
-        StringBuilder sb = new StringBuilder();
-        sb.append("Código: ").append(this.cod).append("\n");
-        sb.append("Titulo: ").append(this.titulo).append("\n");
-        sb.append("Genero: ").append(this.genero).append("\n");
-        sb.append("Fecha Registro: ").append(this.fechaRegistro).append("\n");
-        sb.append("Fecha Baja: ").append(this.fechaBaja).append("\n");
-        sb.append("Fecha alquiler: ").append(this.fechaAlquiler).append("\n");
-        sb.append("Is alquilada: ").append(this.isAlquilada).append("\n");
-
-        return sb.toString();
     }
 
     public boolean alquilar() {

@@ -34,24 +34,13 @@ public class VideoDaw {
         return this.fechaAlta;
     }
 
-    public String mostrarInfoVideoDaw(){
-        StringBuilder sb = new StringBuilder();
-        sb.append("CIF: ").append(this.CIF).append("\n");
-        sb.append("Dirección: ").append(this.direccion).append("\n");
-        sb.append("Fecha alta: ").append(this.fechaAlta).append("\n");
+    @Override
+    public String toString() {
+        final StringBuilder sb = new StringBuilder();
+        sb.append("CIF: ").append(CIF).append("\n");
+        sb.append("Dirección: ").append(direccion).append("\n");
+        sb.append("Fecha Alta: ").append(fechaAlta).append("\n");
 
         return sb.toString();
     }
-
-//    @Override
-//    public String toString() {
-//        final StringBuilder sb = new StringBuilder();
-//        sb.append("CIF: ").append(CIF).append("\n");
-//        sb.append("Dirección: ").append(direccion).append("\n");
-//        sb.append("Fecha Alta: ").append(fechaAlta).append("\n");
-//        sb.append("Películas Registradas: ").append(Arrays.toString(peliculasRegistradas));
-//        sb.append("Clientes registrados: ").append(Arrays.toString(clientesRegistrados));
-//
-//        return sb.toString();
-//    }
 }
