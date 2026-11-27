@@ -11,7 +11,7 @@ public class Cliente {
     private String direccion;
     private LocalDate fechaNacimiento;
     private LocalDate fechaBaja;
-    private Pelicula[] peliculasAlquiladas;
+    private boolean peliculasAlquiladas;
 
     public Cliente(String DNI, String nombre, String codSocio, String direccion,
                    LocalDate fechaNacimiento){
@@ -44,8 +44,16 @@ public class Cliente {
         return this.fechaNacimiento;
     }
 
-    public boolean alquiler() {
+    public boolean alquilar() {
+        if (this.peliculasAlquiladas) {
+            return false;
+        } else if (this.fechaBaja != null) {
+            return false;
+        }
+        this.peliculasAlquiladas = true;
+        this.fechaBaja = LocalDate.now();
 
+        return true;
     }
 
     @Override
@@ -57,7 +65,8 @@ public class Cliente {
         sb.append("Dirección: ").append(direccion).append("\n");
         sb.append("FechaNacimiento: ").append(fechaNacimiento).append("\n");
         sb.append("FechaBaja: ").append(fechaBaja).append("\n");
-        sb.append("PelÍculas Alquiladas: ").append(Arrays.toString(peliculasAlquiladas));
+        sb.append("PelÍculas Alquiladas: ");
+        sb.append(Arrays.toString(peliculasAlquiladas));
 
         return sb.toString();
     }
