@@ -88,6 +88,11 @@ public class Pelicula {
         return true;
     }
 
+    //mostrar información de la película
+    public String mostrarInfoPelicula() {
+        return this.toString();
+    }
+
     @Override
     public String toString() {
         final StringBuilder sb = new StringBuilder();
@@ -95,8 +100,6 @@ public class Pelicula {
         sb.append("Titulo: ").append(titulo).append("\n");
         sb.append("Genero: ").append(genero).append("\n");
         sb.append("FechaRegistro: ").append(fechaRegistro).append("\n");
-        sb.append("FechaBaja: ").append(fechaBaja).append("\n");
-
         if (fechaBaja == null) {
             sb.append("Fecha baja: no esta dada de baja \n");
         }else {
